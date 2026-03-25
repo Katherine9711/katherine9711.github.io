@@ -2,45 +2,91 @@
 <html>
 <head>
     <title>K&S Procurement</title>
-    <p>Flexible Sourcing. Smarter Supply.</p>
     <style>
-    body { font-family: Arial; margin:0; background:#f5f7fa;}
+        body {
+            font-family: Arial;
+            margin: 0;
+            background: #ffffff;
+            color: #111;
+        }
 
-    .nav {
-        background:#0B1F3A;
-        padding:15px;
-    }
+        .nav {
+            background: #111;
+            padding: 15px 40px;
+        }
 
-    .nav a {
-        color:white;
-        margin-right:20px;
-        text-decoration:none;
-    }
+        .nav a {
+            color: white;
+            margin-right: 25px;
+            text-decoration: none;
+            font-size: 14px;
+        }
 
-    .container {
-        max-width:900px;
-        margin:auto;
-        padding:40px;
-        background:white;
-    }
+        .hero {
+            padding: 80px 40px;
+            background: #f5f7fa;
+        }
 
-    h1 {
-        color:#0B1F3A;
-    }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+        }
 
-    .btn {
-        background:#1E90FF;
-        color:white;
-        padding:10px 20px;
-        text-decoration:none;
-        display:inline-block;
-        margin-top:20px;
-    }
-</style>
+        h1 {
+            font-size: 42px;
+            color: #0B1F3A;
+        }
+
+        h2 {
+            margin-top: 50px;
+            color: #0B1F3A;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #1E3A5F;
+            color: white;
+            padding: 14px 28px;
+            text-decoration: none;
+            margin-top: 20px;
+            border-radius: 6px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .section {
+            padding: 50px 40px;
+        }
+
+        .cards {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #f9f9f9;
+            padding: 20px;
+            flex: 1;
+            min-width: 250px;
+            border-radius: 6px;
+        }
+
+        img {
+            width: 100%;
+            margin-top: 20px;
+            border-radius: 6px;
+        }
+
+    </style>
 </head>
 
 <body>
 
+<!-- NAV -->
 <div class="nav">
     <a href="index.html">Home</a>
     <a href="services.html">Services</a>
@@ -48,18 +94,85 @@
     <a href="contact.html">Contact</a>
 </div>
 
+<!-- HERO -->
+<div class="hero">
+    <div class="container">
+        <h1>China Sourcing Made Simple</h1>
+        <p>
+            We help European brands and retailers source reliable products from China — 
+            from supplier selection to delivery.
+        </p>
+        <a class="btn" href="contact.html">Get a Quote</a>
+    </div>
+</div>
+
+<!-- IMAGE -->
 <div class="container">
-    <h1>China Sourcing Made Simple</h1>
+    <img src="factory.jpg">
+</div>
 
-    <p>
-        We help European brands and retailers source reliable products from China —
-        from supplier selection to delivery.
-    </p>
+<!-- SERVICES OVERVIEW -->
+<div class="section">
+    <div class="container">
+        <h2>What We Do</h2>
 
-    <a class="btn" href="contact.html">Get a Quote</a>
+        <div class="cards">
+            <div class="card">
+                <h3>Find the Right Supplier</h3>
+                <p>We connect you with verified factories that match your needs.</p>
+            </div>
 
-    <img src="factory.jpg" style="width:100%; margin-top:30px;">
+            <div class="card">
+                <h3>Avoid Costly Mistakes</h3>
+                <p>We audit suppliers and monitor production.</p>
+            </div>
 
+            <div class="card">
+                <h3>Ensure Quality</h3>
+                <p>We inspect products before shipment.</p>
+            </div>
+
+            <div class="card">
+                <h3>Smooth Shipping</h3>
+                <p>We handle logistics and delivery.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- PROCESS -->
+<div class="section" style="background:#f5f7fa;">
+    <div class="container">
+        <h2>How It Works</h2>
+
+        <p>1. Tell us your requirements</p>
+        <p>2. We find and compare suppliers</p>
+        <p>3. Sample confirmation</p>
+        <p>4. Production & Quality Control</p>
+        <p>5. Shipping & Delivery</p>
+    </div>
+</div>
+
+<!-- WHY US -->
+<div class="section">
+    <div class="container">
+        <h2>Why K&S Procurement</h2>
+
+        <div class="cards">
+            <div class="card">Based in China with strong supplier network</div>
+            <div class="card">Experience with international clients</div>
+            <div class="card">Fast communication</div>
+            <div class="card">Flexible cooperation model</div>
+        </div>
+    </div>
+</div>
+
+<!-- CTA -->
+<div class="section" style="background:#0B1F3A; color:white;">
+    <div class="container">
+        <h2>Start Your Sourcing Today</h2>
+        <a class="btn" href="contact.html">Get a Quote</a>
+    </div>
 </div>
 
 </body>
