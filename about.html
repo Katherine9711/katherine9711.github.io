@@ -2,46 +2,159 @@
 <html>
 <head>
     <title>About - KS Procurement</title>
+
     <style>
-        body { font-family: Arial; margin:0; background:#f5f7fa;}
-        .nav { background:#111; padding:15px;}
-        .nav a { color:white; margin-right:20px; text-decoration:none;}
-        .container { max-width:900px; margin:auto; padding:40px; background:white;}
+        body {
+            font-family: Arial;
+            margin: 0;
+            background: #F5F7FA;
+            color: #111;
+        }
+
+        /* NAV */
+        .nav {
+            background: #111111;
+            padding: 15px 40px;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav img {
+            height: 40px;
+            width: auto;
+            margin-right: 30px;
+        }
+
+        .nav a {
+            color: white;
+            margin-right: 25px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        /* MAIN */
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 60px 40px;
+            background: white;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #0F9D8A;
+            margin-top: 40px;
+        }
+
+        p {
+            line-height: 1.7;
+            font-size: 15px;
+        }
+
+        /* IMAGE */
+        .img-box {
+            height: 350px;
+            overflow: hidden;
+            margin-top: 30px;
+            border-radius: 6px;
+        }
+
+        .img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* CTA */
+        .btn {
+            display: inline-block;
+            background: #0F9D8A;
+            color: white;
+            padding: 12px 24px;
+            margin-top: 25px;
+            text-decoration: none;
+            border-radius: 6px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #0B7F73;
+        }
+
+        /* FOOTER */
+        .footer {
+            background: #111111;
+            color: white;
+            padding: 40px;
+            margin-top: 60px;
+        }
+
+        .footer-content {
+            max-width: 1000px;
+            margin: auto;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
     </style>
 </head>
 
 <body>
 
-<div class="nav" style="display:flex; align-items:center;">
+<!-- NAV -->
+<div class="nav">
 
-   <img src="logo.png" style="height:40px; width:auto;">
+    <a href="index.html">
+        <img src="logo.png">
+    </a>
 
     <a href="index.html">Home</a>
     <a href="services.html">Services</a>
     <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
+
 </div>
 
+<!-- CONTENT -->
 <div class="container">
 
-<h1>About KS Procurement</h1>
+    <h1>About KS Procurement</h1>
 
-<p>
-We are a sourcing company based in China, working closely with European clients.
-</p>
+    <p>
+        KS Procurement is a sourcing company based in China, working closely with European brands and retailers.
+    </p>
 
-<p>
-Our goal is to simplify sourcing and build long-term partnerships.
-</p>
+    <p>
+        We specialize in helping clients find reliable suppliers, reduce sourcing risks, and manage production efficiently.
+    </p>
 
-<img src="team.jpg" style="width:100%; max-height:400px; object-fit:cover;">
+    <h2>Our Approach</h2>
+
+    <p>
+        We focus on transparency, communication, and long-term partnerships.
+        By combining local supplier knowledge with international business understanding,
+        we ensure smooth cooperation between clients and factories.
+    </p>
+
+    <!-- IMAGE -->
+    <div class="img-box">
+        <img src="team.jpg">
+    </div>
+
+    <!-- CTA -->
+    <a class="btn" href="contact.html">Get a Quote</a>
 
 </div>
+
 <!-- FOOTER -->
-<div style="background:#0B1F3A; color:white; padding:40px 40px; margin-top:60px;">
-    
-    <div style="max-width:1000px; margin:auto; font-size:14px; line-height:1.8;">
-        
+<div class="footer">
+    <div class="footer-content">
+
         <strong>KS Procurement</strong><br><br>
 
         Email: info@ksprocurement.com<br>
@@ -50,7 +163,7 @@ Our goal is to simplify sourcing and build long-term partnerships.
         BTW-id No.: NL005432124B24
 
     </div>
-
 </div>
+
 </body>
 </html>
