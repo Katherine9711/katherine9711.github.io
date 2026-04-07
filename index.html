@@ -1,164 +1,98 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>KS Procurement</title>
+<title>KS Procurement</title>
 
-    <style>
-        body { margin:0; font-family:Arial; color:#111; }
+<link rel="icon" href="favicon.ico">
 
-        .nav {
-            display:flex;
-            align-items:center;
-            justify-content:space-between;
-            padding:15px 40px;
-            background:#0B1F3A;
-        }
+<style>
+body { font-family: Arial; margin:0; background:#F5F7FA; color:#111;}
 
-        .nav img {
-            height:40px;
-        }
+.nav { background:#111; padding:15px 40px; display:flex; align-items:center;}
+.nav img { height:40px; margin-right:30px;}
+.nav a { color:white; margin-right:25px; text-decoration:none;}
 
-        .nav a {
-            color:white;
-            margin-left:25px;
-            text-decoration:none;
-            font-size:14px;
-        }
+.hero { max-width:1000px; margin:auto; padding:60px 40px;}
+h1 { font-size:36px;}
+h2 { color:#0F9D8A;}
+p { line-height:1.7;}
 
-        .hero {
-            padding:80px 40px;
-            background:#f5f7fa;
-        }
+.img-box { height:350px; overflow:hidden; margin-top:30px; border-radius:6px;}
+.img-box img { width:100%; height:100%; object-fit:cover;}
 
-        .container {
-            max-width:1000px;
-            margin:auto;
-        }
+.container { max-width:1000px; margin:auto; padding:40px; background:white; margin-top:30px;}
 
-        h1 { font-size:42px; color:#0B1F3A; }
+.cards { display:flex; flex-wrap:wrap; gap:20px;}
+.card { flex:1; min-width:220px; background:#f5f7fa; padding:20px; border-radius:6px;}
 
-        h2 { margin-top:50px; color:#0B1F3A; }
+.btn {
+background:#0F9D8A;
+color:white;
+padding:12px 24px;
+border-radius:6px;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+text-decoration:none;
+}
 
-        p { line-height:1.6; }
-
-        .btn {
-            display:inline-block;
-            background:linear-gradient(90deg,#4BB3A1,#1C5C6F);
-            color:white;
-            padding:14px 28px;
-            text-decoration:none;
-            border-radius:6px;
-            margin-top:20px;
-            box-shadow:0 4px 12px rgba(0,0,0,0.25);
-        }
-
-        .section { padding:60px 40px; }
-
-        .cards {
-            display:flex;
-            gap:20px;
-            flex-wrap:wrap;
-        }
-
-        .card {
-            background:#f9f9f9;
-            padding:20px;
-            flex:1;
-            min-width:250px;
-            border-radius:6px;
-        }
-
-        .banner {
-            height:380px;
-            overflow:hidden;
-            margin-top:30px;
-        }
-
-        .banner img {
-            width:100%;
-            height:100%;
-            object-fit:cover;
-        }
-
-    </style>
+.footer { background:#111; color:white; padding:40px; margin-top:60px;}
+.footer-content { max-width:1000px; margin:auto;}
+</style>
 </head>
 
 <body>
 
-<!-- NAV -->
 <div class="nav">
-    <img src="logo.png">
-    <div>
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-    </div>
+<img src="logo.png">
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
 </div>
 
-<!-- HERO -->
 <div class="hero">
-    <div class="container">
-        <h1>China Sourcing Made Simple</h1>
-        <p>We help European brands source reliable products from China — from supplier selection to delivery.</p>
-        <a class="btn" href="contact.html">Get a Quote</a>
-    </div>
+<h1>China Sourcing Made Simple</h1>
+<p>We help European brands source reliable products from China.</p>
+<a class="btn" href="contact.html">Get a Quote</a>
+
+<div class="img-box">
+<img src="factory.jpg">
+</div>
 </div>
 
-<!-- IMAGE -->
 <div class="container">
-    <div class="banner">
-        <img src="factory.jpg">
-    </div>
+<h2>What We Do</h2>
+<div class="cards">
+<div class="card">Find reliable suppliers</div>
+<div class="card">Reduce sourcing risks</div>
+<div class="card">Ensure product quality</div>
+<div class="card">Manage logistics</div>
+</div>
 </div>
 
-<!-- SERVICES -->
-<div class="section">
-    <div class="container">
-        <h2>What We Do</h2>
-
-        <div class="cards">
-            <div class="card">
-                <h3>Supplier Sourcing</h3>
-                <p>We match you with reliable factories.</p>
-            </div>
-
-            <div class="card">
-                <h3>Quality Control</h3>
-                <p>We ensure product quality before shipment.</p>
-            </div>
-
-            <div class="card">
-                <h3>Negotiation</h3>
-                <p>We help secure competitive pricing.</p>
-            </div>
-
-            <div class="card">
-                <h3>Logistics</h3>
-                <p>We handle delivery from factory to destination.</p>
-            </div>
-        </div>
-    </div>
+<div class="container">
+<h2>How It Works</h2>
+<p>1. Tell us your requirements</p>
+<p>2. We find suppliers</p>
+<p>3. Sample confirmation</p>
+<p>4. Production & QC</p>
+<p>5. Shipping</p>
 </div>
 
-<!-- PROCESS -->
-<div class="section" style="background:#f5f7fa;">
-    <div class="container">
-        <h2>How It Works</h2>
-
-        <p>1. Share your requirements</p>
-        <p>2. Supplier sourcing & comparison</p>
-        <p>3. Sample confirmation</p>
-        <p>4. Production & QC</p>
-        <p>5. Shipping</p>
-    </div>
+<div class="container">
+<h2>Start Your Sourcing Today</h2>
+<a class="btn" href="contact.html">Get a Quote</a>
 </div>
 
-<!-- CTA -->
-<div class="section" style="background:#0B1F3A; color:white;">
-    <div class="container">
-        <h2>Start Your Sourcing Today</h2>
-        <a class="btn" href="contact.html">Get a Quote</a>
-    </div>
+<div class="footer">
+<div class="footer-content">
+<strong>KS Procurement</strong><br><br>
+
+        Email: info@ksprocurement.com<br>
+        Phone: +86 195 2142 9711<br>
+        KvK No.: 42011492<br>
+        BTW-id No.: NL005432124B24
+
+</div>
 </div>
 
 </body>
