@@ -6,6 +6,7 @@
 
 <style>
 body { font-family: Arial; margin:0; background:#F5F7FA;}
+
 .nav { background:#111; padding:12px 40px; display:flex; align-items:center;}
 .logo { height:40px; margin-right:30px;}
 
@@ -24,16 +25,27 @@ background:#0F9D8A;
 
 .container { max-width:1000px; margin:auto; padding:60px 40px; background:white;}
 
-input, textarea { width:100%; padding:10px; margin-bottom:10px;}
+input, textarea {
+width:100%;
+padding:10px;
+margin-bottom:10px;
+font-size:14px;
+}
 
-.btn { background:#0F9D8A; color:white; padding:10px; border:none;}
+.btn {
+background:#0F9D8A;
+color:white;
+padding:10px 20px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
 
 /* FOOTER */
 .footer { background:#111; color:white; padding:40px; margin-top:60px;}
-.footer-content { max-width:1000px; margin:10px; font-size:14px; line-height:1.8;}
+.footer-content { max-width:1000px; margin:auto; line-height:1.8;}
 </style>
 </head>
-
 
 <body>
 
@@ -49,20 +61,45 @@ input, textarea { width:100%; padding:10px; margin-bottom:10px;}
 
 <h1>Contact Us</h1>
 
-<form>
-<input placeholder="Product">
-<input placeholder="Quantity">
-<input placeholder="Details"></textarea>
-<button class="btn">Submit</button>
-</form>
+<!-- 表单 -->
+<input id="name" placeholder="Name">
+<input id="email" placeholder="E-mail address">
+<input id="subject" placeholder="Subject">
+<textarea id="message" placeholder="Your message"></textarea>
+
+<button class="btn" onclick="sendEmail()">Get a Quote</button>
 
 </div>
 
 <div class="footer">
 <div class="footer-content">
-<strong>KS Procurement</strong><br><br> Email: info@ksprocurement.com<br> Phone: +86 195 2142 9711<br> KvK No.: 42011492<br> BTW-id No.: NL005432124B24
+<strong>KS Procurement</strong><br><br>
+Email: info@ksprocurement.com<br>
+Phone: +86 195 2142 9711<br>
+KvK No.: 42011492<br>
+BTW-id No.: NL005432124B24
 </div>
 </div>
+
+<script>
+function sendEmail() {
+
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var subject = document.getElementById("subject").value;
+    var message = document.getElementById("message").value;
+
+    var mailtoLink = "mailto:info@ksprocurement.com"
+        + "?subject=" + encodeURIComponent(subject)
+        + "&body=" + encodeURIComponent(
+            "Name: " + name + "\n"
+            + "Email: " + email + "\n\n"
+            + "Message:\n" + message
+        );
+
+    window.location.href = mailtoLink;
+}
+</script>
 
 </body>
 </html>
