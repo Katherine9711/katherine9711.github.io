@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Case - Furniture sourcing</title>
+<link rel="icon" href="/favicon.ico">
+
+<style>
+body { font-family: Arial; margin:0; background:#F5F7FA; color:#111;}
+
+.nav { background:#111; padding:12px 40px; display:flex; align-items:center;}
+.logo { height:40px; margin-right:30px;}
+
+.nav a:not(.logo-link) {
+color:white;
+margin-right:15px;
+text-decoration:none;
+font-size:15px;
+padding:8px 16px;
+border-radius:6px;
+background:#0F9D8A;
+}
+
+.nav a:not(.logo-link):hover { background:#111;}
+.logo-link { margin-right:15px;}
+
+.container { max-width:1000px; margin:10px; padding:60px 40px; background:white;}
+
+h1 { font-size:32px; margin-bottom:20px;}
+h2 { color:#0F9D8A; margin-top:30px;}
+p { line-height:1.7;}
+
+/* IMAGE */
+.img-box {
+height:350px;
+margin-top:20px;
+border-radius:8px;
+overflow:hidden;
+}
+
+.img-box img {
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+/* CTA */
+.btn {
+display:inline-block;
+background:#0F9D8A;
+color:white;
+padding:12px 24px;
+margin-top:30px;
+text-decoration:none;
+border-radius:6px;
+}
+
+.btn:hover { background:#111;}
+
+/* FOOTER */
+.footer { background:#111; color:white; padding:40px; margin-top:60px;}
+.footer-content { max-width:1000px; margin:auto; line-height:1.8;}
+</style>
+</head>
+
+<body>
+
+<div class="nav">
+<a href="index.html" class="logo-link">
+<img src="logo.png" class="logo">
+</a>
+<a href="index.html">Home</a>
+<a href="services.html">Services</a>
+<a href="cases.html" class="active">Cases</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</div>
+
+<div class="container">
+
+<h1><!-- EDIT HERE -->Furniture sourcing for EU retailer</h1>
+
+<!-- IMAGE -->
+<div class="img-box">
+<img src="case1.jpg"> <!-- 替换图片 -->
+</div>
+
+<h2>Client Situation</h2>
+<p><!-- EDIT HERE -->
+Describe the client background (e.g. European retailer, product type, etc.)
+</p>
+
+<h2>Challenge</h2>
+<p><!-- EDIT HERE -->
+What problem they faced (supplier issues, cost, quality, etc.)
+</p>
+
+<h2>What We Did</h2>
+<p><!-- EDIT HERE -->
+Explain your actions: sourcing, negotiation, QC, etc.
+</p>
+
+<h2>Result</h2>
+<p><!-- EDIT HERE -->
+Highlight results: cost saved, efficiency improved, risk reduced
+</p>
+
+<a class="btn" href="contact.html">Start Your Sourcing Project</a>
+
+</div>
+
+<div class="footer">
+<div class="footer-content">
+<strong>KS Procurement</strong><br><br>
+Email: info@ksprocurement.com<br>
+Phone: +86 195 2142 9711<br>
+KvK No.: 42011492<br>
+BTW-id No.: NL005432124B24
+</div>
+</div>
+
+</body>
+</html>
