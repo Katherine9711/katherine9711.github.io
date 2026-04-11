@@ -30,18 +30,18 @@ h2 { color:#0F9D8A; margin-top:30px;}
 p { line-height:1.7; font-size:15px;}
 
 /* TOP */
-.top-section {
-display:flex;
-gap:30px;
-align-items:flex-start;
-}
-
-.text { flex:2; }
-
 .img-box {
-flex:1;
+float:right;              /* 关键：让图片靠右 */
+width:300px;              /* 控制图片大小 */
+margin:0 0 20px 30px;     /* 左边留空间给文字 */
 border-radius:8px;
 overflow:hidden;
+}
+
+.img-box img {
+width:100%;
+height:auto;
+display:block;
 }
 
 .img-box img {
